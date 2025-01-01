@@ -1,5 +1,7 @@
 # Zappy Server - README
 
+graphisme 3d avec raylib
+
 ## Contexte et contraintes du sujet
 
 Le sujet impose de créer un serveur mono-thread pour un système client/serveur. Les contraintes spécifiques sont :
