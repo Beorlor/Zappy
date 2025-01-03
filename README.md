@@ -2,6 +2,15 @@
 
 graphisme 3d avec raylib
 
+
+2. Utilité du son (Broadcast) pour organiser le rituel
+Oui, le son (ou plus précisément la commande Broadcast) est très utile pour :
+
+Coordonner les joueurs : Envoyer des messages du style « Rejoignez-moi sur la case (X, Y) pour incanter ! »
+Communiquer à distance : Indiquer aux coéquipiers quelles ressources sont nécessaires ou quel joueur doit venir.
+Stratégie : Pendant que certains cherchent des pierres, on peut diffuser les updates (« J’ai trouvé 2 Linemate, je suis en (3,8) »).
+Les autres joueurs reçoivent alors un message de type « broadcast : <message> » et savent la direction depuis laquelle le son a été émis (selon les règles du protocole). Ils peuvent donc se réorienter et rejoindre l’émetteur pour préparer le rituel d’incantation (ou tout autre objectif collectif).
+
 ## Contexte et contraintes du sujet
 
 Le sujet impose de créer un serveur mono-thread pour un système client/serveur. Les contraintes spécifiques sont :
